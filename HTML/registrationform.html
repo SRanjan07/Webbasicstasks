@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Registration Form</title>
+<style>
+  input,select,textarea{width:100%;padding:8px;border:1px solid #ccc;border-radius:4px;box-sizing:border-box}
+  .row{display:flex;gap:10px}
+  .actions{margin-top:14px;text-align:right}
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <h2>Register</h2>
+    <form id="regForm" novalidate>
+      <div class="row">
+        <div>
+          <label for="first">First name</label>
+          <input id="first" name="first" type="text" required />
+        </div>
+        <div>
+          <label for="last">Last name</label>
+          <input id="last" name="last" type="text" required />
+        </div>
+      </div>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required />
+
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" minlength="6" required />
+
+      <label for="confirm">Confirm password</label>
+      <input id="confirm" name="confirm" type="password" minlength="6" required />
+
+      <label for="phone">Phone (optional)</label>
+      <input id="phone" name="phone" type="tel" />
+
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select...</option>
+        <option>Female</option>
+        <option>Male</option>
+        <option>Other</option>
+      </select>
+
+      <label for="address">Address (optional)</label>
+      <textarea id="address" name="address" rows="3"></textarea>
+
+      <label class="small"><input id="terms" name="terms" type="checkbox" required /> I agree to the terms</label>
+
+      <div class="actions">
+        <button type="submit">Register</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

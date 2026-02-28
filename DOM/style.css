@@ -1,0 +1,29 @@
+div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+div #form{
+    padding: 50px;
+  #inputvalue{
+    border-radius: 5px;
+    border: 1px solid rgb(red, green, blue);
+  }
+  #inputvalue:focus{
+    outline: 0px;
+  }
+  button{
+    height: 22px;
+    width: 50px;
+    background-color: greenyellow;
+    border-radius: 5px;
+    border: 1px solid rgb(red, green, blue);
+
+  }
+  button:hover{
+    background-color:rgb(115, 167, 42);
+  }
+
+}
